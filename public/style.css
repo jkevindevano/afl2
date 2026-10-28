@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #FAF6F2;
+    color: #513D45;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 em, h2 em {
+    color: #A77885;
+}
+
+.eyebrow {
+    font-size: 11px;
+    color: #A77885;
+    letter-spacing: 2px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 7%;
+    background-color: #ffcef3;
+    position: sticky;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #A77885;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-size: 13px;
+}
+
+.nav-links .active {
+    color: #A77885;
+}
+
+.nav-contact {
+    background-color: #5C4750;
+    color: white;
+    padding: 12px 20px;
+    font-size: 13px;
+}
+
+
+.btn-primary {
+    display: inline-block;
+    background-color: #A77885;
+    color: white;
+    padding: 15px 25px;
+    font-size: 13px;
+}
+
+.btn-secondary {
+    display: inline-block;
+    border: 1px solid #5C4750;
+    padding: 15px 25px;
+    font-size: 13px;
+}
+
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 7%;
+}
+
+.hero h1 {
+    font-size: 65px;
+    margin: 25px 0;
+}
+
+.hero-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #807178;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero-image-label {
+    background-color: white;
+    padding: 20px;
+}
+
+.hero-image-label span {
+    display: block;
+    font-size: 11px;
+    color: #A77885;
+}
+
+.hero-image-label strong {
+    font-size: 17px;
+}
+
+.hero-note {
+    margin-top: 40px;
+    font-size: 11px;
+    color: #807178;
+}
+
+.note-line {
+    display: none;
+}
+
+
+.intro-section {
+    text-align: center;
+    background-color: white;
+    padding: 90px 20px;
+}
+
+.intro-section h2 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.intro-section p {
+    max-width: 550px;
+    margin: auto;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #807178;
+}
+
+
+
+.collection-section {
+    padding: 90px 7%;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.section-header h2 {
+    font-size: 45px;
+    margin-top: 15px;
+}
+
+.section-header p {
+    max-width: 300px;
+    font-size: 14px;
+    color: #807178;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.product-status {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 8px 12px;
+    font-size: 11px;
+}
+
+.product-info {
+    padding: 15px 0;
+}
+
+.product-category {
+    font-size: 11px;
+    color: #A77885;
+}
+
+.product-info h3 {
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.product-info p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #807178;
+}
+
+
+
+.empty-products {
+    grid-column: 1 / -1;
+    text-align: center;
+    background-color: #F1E5E4;
+    padding: 60px 20px;
+}
+
+.empty-icon {
+    font-size: 35px;
+    color: #A77885;
+}
+
+.empty-products h3 {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.empty-products p {
+    margin-bottom: 25px;
+    color: #807178;
+}
+
+
+/* about */
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+    background-color: #F1E5E4;
+    padding: 90px 7%;
+}
+
+.about-image img {
+    height: 450px;
+    object-fit: cover;
+}
+
+.about-content h2 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.about-content p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #807178;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #5C4750;
+    font-size: 13px;
+}
+
+
+
+
+.steps-section {
+    background-color: white;
+    padding: 90px 7%;
+}
+
+.steps-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.steps-heading h2 {
+    font-size: 45px;
+    margin: 20px 0;
+}
+
+.steps-heading p {
+    font-size: 14px;
+    color: #807178;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.step-card {
+    background-color: #FAF6F2;
+    padding: 35px;
+}
+
+.step-number {
+    font-size: 40px;
+    color: #D8B6BD;
+}
+
+.step-card h3 {
+    font-size: 21px;
+    margin: 20px 0;
+}
+
+.step-card p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #807178;
+}
+
+
+.contact-section {
+    text-align: center;
+    background-color: #F1E5E4;
+    padding: 90px 20px;
+}
+
+.contact-section h2 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.contact-section p {
+    max-width: 480px;
+    margin: 0 auto 30px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #807178;
+}
+
+
+.footer {
+    background-color: #5C4750;
+    color: white;
+    text-align: center;
+    padding: 60px 20px 25px;
+}
+
+.footer-content h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.footer-content a {
+    font-size: 13px;
+}
+
+.copyright {
+    margin-top: 40px;
+}
+
+
