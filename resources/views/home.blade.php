@@ -1,5 +1,7 @@
 @extends('mainlayout')
 
+@section('title', 'Home | Findora')
+
 @section('main_content')
 
 <section class="hero">

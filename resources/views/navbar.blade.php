@@ -6,22 +6,16 @@
 
     <div class="nav-links">
 
-        <a href="home">
-            Home
+        <a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
         </a>
 
-        <a href="contact">
-            About Us
-        </a>
+        <a href="{{ route('product') }}" class="{{ request()->routeIs('product') ? 'active' : '' }}">Product</a>
 
-        <a href="contact">
+        <a href="{{ route('testimoni') }}" class="{{ request()->routeIs('testimoni') ? 'active' : '' }}">
             How It Works
         </a>
 
-        <a href="contact">
-            Contact
-        </a>
-
+        <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'active' : '' }}"></a>
     </div>
 
     <a href="https://www.instagram.com/jastip_byevaa/"

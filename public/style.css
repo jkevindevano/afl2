@@ -399,4 +399,8 @@ h1 em, h2 em {
     margin-top: 40px;
 }
 
+.nav-aktif a.active {
+    color: #A77885;
+    border-bottom: 1px solid #A77885;
+}
 
