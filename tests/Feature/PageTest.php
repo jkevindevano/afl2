@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Models\Product;
 use Tests\TestCase;
 
 class PageTest extends TestCase
@@ -23,6 +24,25 @@ class PageTest extends TestCase
         $this->get(route('product'))
             ->assertOk()
             ->assertSee('FINDORA COLLECTION');
+    }
+
+    public function test_product_page_lists_every_product(): void
+    {
+        $response = $this->get(route('product'));
+
+        $response->assertOk();
+
+        foreach (Product::getAll() as $product) {
+            $response->assertSee($product['name']);
+            $response->assertSee(asset('mydesign/images/'.$product['image']), escape: false);
+        }
+    }
+
+    public function test_product_page_has_whatsapp_order_link(): void
+    {
+        $this->get(route('product'))
+            ->assertOk()
+            ->assertSee('https://wa.me/447413298891', escape: false);
     }
 
     public function test_testimonial_page_renders(): void

@@ -4,7 +4,12 @@ namespace App\Models;
 
 class Product
 {
-    public static function getAll()
+    /**
+     * Daftar produk yang ada di halaman Product.
+     *
+     * @return array<int, array{name: string, category: string, image: string, description: string}>
+     */
+    public static function getAll(): array
     {
         return [
             [
@@ -38,5 +43,15 @@ class Product
                 'description' => 'An insulated BrüMate Era tumbler with a shimmering purple-blue finish. It comes with a straw lid and a comfortable handle for drinks on the go. Keeps your drinks cold or hot for hours.',
             ],
         ];
+    }
+
+    /**
+     * Buat link WhatsApp berisi pesan tanya produk.
+     */
+    public static function whatsappLink(string $productName): string
+    {
+        $message = 'Halo Kak Evaa, saya mau tanya tentang '.$productName;
+
+        return 'https://wa.me/447413298891?text='.rawurlencode($message);
     }
 }
