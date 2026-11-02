@@ -1,5 +1,6 @@
 @extends('mainlayout')
-    @section('main_content')
+@section('title', 'Contact | Findora')    
+@section('main_content')
     <section id="contact" class="contact-section">
 
     <span class="eyebrow">
