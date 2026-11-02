@@ -1,20 +1,19 @@
 <footer class="footer">
-        <div class="footer-content">
 
-            <h2>findora.</h2>
+    <div class="footer-content">
 
-            <p>Discover More, Shop Easier.</p>
+        <h2>findora.</h2>
 
-            <a href="https://www.instagram.com/jastip_byevaa/"
-               target="_blank"
-               rel="noopener noreferrer">
-                Visit Our Instagram
-            </a>
+        <p>Discover More, Shop Easier.</p>
 
-            <p class="copyright">
-                &copy; {{ date('Y') }} Findora.
-                All Rights Reserved.
-            </p>
+        <a href="{{ $instagramUrl }}" target="_blank" rel="noopener noreferrer">
+            Visit Our Instagram
+        </a>
 
-        </div>
-    </footer>
+        <p class="copyright">
+            &copy; {{ date('Y') }} Findora. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
