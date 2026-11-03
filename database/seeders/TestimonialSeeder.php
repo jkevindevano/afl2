@@ -16,23 +16,23 @@ class TestimonialSeeder extends Seeder
        $testimonials = [
             [
                 'name_customer' => 'Budi Santoso',
-                'testimonial' => 'Pelayanan sangat cepat dan hasil website sangat memuaskan!',
+                'text' => 'Pelayanan sangat cepat dan hasil website sangat memuaskan!',
             ],
             [
                 'name_customer' => 'Siti Rahma',
-                'testimonial' => 'Sangat profesional, fiturnya lengkap dan mudah digunakan.',
+                'text' => 'Sangat profesional, fiturnya lengkap dan mudah digunakan.',
             ],
             [
                 'name_customer' => 'John Doe',
-                'testimonial' => 'This product exceeded my expectations! Highly recommend it to everyone.',
+                'text' => 'This product exceeded my expectations! Highly recommend it to everyone.',
             ],
             [
                 'name_customer' => 'Jane Smith',
-                'testimonial' => 'Amazing quality and fast shipping. I will definitely buy again!',
+                'text' => 'Amazing quality and fast shipping. I will definitely buy again!',
             ],
             [
                 'name_customer' => 'Michael Johnson',
-                'testimonial' => 'Customer service was excellent. They helped me with all my questions.',
+                'text' => 'Customer service was excellent. They helped me with all my questions.',
             ],
         ];
 
