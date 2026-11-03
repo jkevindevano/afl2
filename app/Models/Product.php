@@ -52,6 +52,6 @@ class Product
     {
         $message = 'Halo Kak Evaa, saya mau tanya tentang '.$productName;
 
-        return 'https://wa.me/447413298891?text='.rawurlencode($message);
+        return config('services.whatsapp.url').'?text='.rawurlencode($message);
     }
 }

@@ -129,7 +129,7 @@ button:focus-visible {
     color: var(--accent);
 }
 
-.nav-contact {
+.nav-whatsapp {
     padding: 12px 20px;
     font-size: 13px;
     background-color: var(--dark);
@@ -137,7 +137,7 @@ button:focus-visible {
     transition: background-color 0.2s ease;
 }
 
-.nav-contact:hover {
+.nav-whatsapp:hover {
     background-color: var(--accent-dark);
 }
 
@@ -200,28 +200,18 @@ button:focus-visible {
 }
 
 
-.intro-section,
-.contact-section {
+.intro-section {
     padding: 90px 20px;
     text-align: center;
-}
-
-.intro-section {
     background-color: var(--surface);
 }
 
-.contact-section {
-    background-color: var(--surface-alt);
-}
-
-.intro-section h2,
-.contact-section h2 {
+.intro-section h2 {
     margin: 20px 0;
     font-size: 48px;
 }
 
-.intro-section p,
-.contact-section p {
+.intro-section p {
     max-width: 550px;
     margin: 0 auto;
     font-size: 14px;
@@ -229,8 +219,7 @@ button:focus-visible {
     color: var(--muted);
 }
 
-.intro-section .btn-primary,
-.contact-section .btn-primary {
+.intro-section .btn-primary {
     margin-top: 30px;
 }
 
@@ -456,8 +445,7 @@ button:focus-visible {
     }
 
     .about-content h2,
-    .intro-section h2,
-    .contact-section h2 {
+    .intro-section h2 {
         font-size: 38px;
     }
 }
@@ -476,7 +464,7 @@ button:focus-visible {
         gap: 12px;
     }
 
-    .nav-contact {
+    .nav-whatsapp {
         padding: 10px 16px;
     }
 
@@ -493,13 +481,11 @@ button:focus-visible {
         font-size: 32px;
     }
 
-    .intro-section,
-    .contact-section {
+    .intro-section {
         padding: 60px 20px;
     }
 
-    .intro-section h2,
-    .contact-section h2 {
+    .intro-section h2 {
         font-size: 30px;
     }
 

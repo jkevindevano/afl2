@@ -12,5 +12,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         View::share('instagramUrl', 'https://www.instagram.com/jastip_byevaa/');
+        View::share('whatsappUrl', config('services.whatsapp.url'));
     }
 }

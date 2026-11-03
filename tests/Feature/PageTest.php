@@ -42,7 +42,7 @@ class PageTest extends TestCase
     {
         $this->get(route('product'))
             ->assertOk()
-            ->assertSee('https://wa.me/447413298891', escape: false);
+            ->assertSee('https://wa.me/+6281230840680', escape: false);
     }
 
     public function test_testimonial_page_renders(): void
@@ -52,16 +52,9 @@ class PageTest extends TestCase
             ->assertSee('WHAT THEY SAY');
     }
 
-    public function test_contact_page_renders(): void
-    {
-        $this->get(route('contact'))
-            ->assertOk()
-            ->assertSee('STAY CONNECTED');
-    }
-
     public function test_navigation_marks_the_current_page_as_active(): void
     {
-        $this->get(route('contact'))
+        $this->get(route('testimoni'))
             ->assertOk()
             ->assertSee('class="active"', escape: false);
     }
