@@ -15,6 +15,6 @@ class Testimonial extends Model
 
     public static function getAll()
     {
-        return self::all();
+        return self::all()->toArray();
     }
 }
