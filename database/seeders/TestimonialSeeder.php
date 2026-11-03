@@ -36,8 +36,6 @@ class TestimonialSeeder extends Seeder
             ],
         ];
 
-        foreach ($testimonials as $testimonial) {
-            Testimonial::create($testimonial);
-        }
+        
     }
 }
