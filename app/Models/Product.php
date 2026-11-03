@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Models;
-
-class Product
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+class Product extends Model
 {
     protected $fillable = [
         'name',
