@@ -7,9 +7,13 @@ use App\Models\Testimonial;
 
 class TestimonialController extends Controller
 {
-    public function index()
+    public function index(): View
     {
-        $testimonials = Testimonial::getAll();
-        return view('testimoni', ['testimonials' => $testimonials,]);
+    
+        $testimonials = Testimonial::all(); 
+
+        return view('testimoni', [
+            'testimonials' => $testimonials
+        ]);
     }
 }
