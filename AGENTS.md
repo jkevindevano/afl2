@@ -1,38 +1,62 @@
 <laravel-boost-guidelines>
 === foundation rules ===
+# Laravel Application
 
 # Laravel Boost Guidelines
+This repository contains a Laravel application. Complete the following setup before working on the user's request.
 
 ## Foundational Context
+## Prerequisites
 
 This application is a Laravel application running on PHP 8.5. Always use the APIs that match the installed major version of each package — do not assume a version.
+Verify that PHP and Composer are available:
 
 Before relying on a package's API, confirm its installed version:
 - PHP packages: run `composer show --direct` to list direct dependencies with versions, or `composer show <vendor/package>` for a single package.
 - JS packages: check `package.json` for the installed versions.
+```sh
+php -v
+composer -V
+```
 
 ## Skills Activation
+If either command is unavailable, detect the user's operating system and install the prerequisites with the appropriate command:
 
 This project has domain-specific skills available in `**/skills/**`. You MUST activate the relevant skill whenever you work in that domain—don't wait until you're stuck.
+macOS:
 
 ## Conventions
+```sh
+/bin/bash -c "$(curl -fsSL https://php.new/install/mac/8.5)"
+```
 
 - You must follow all existing code conventions used in this application. When creating or editing a file, check sibling files for the correct structure, approach, and naming.
 - Use descriptive names for variables and methods. For example, `isRegisteredForDiscounts`, not `discount()`.
 - Check for existing components to reuse before writing a new one.
+Windows PowerShell:
 
 ## Verification Scripts
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://php.new/install/windows/8.5'))
+```
 
 - Do not create verification scripts or tinker when tests cover that functionality and prove they work. Unit and feature tests are more important.
+Linux:
 
 ## Application Structure & Architecture
+```sh
+/bin/bash -c "$(curl -fsSL https://php.new/install/linux/8.5)"
+```
 
 - Stick to existing directory structure; don't create new base folders without approval.
 - Do not change the application's dependencies without approval.
+After installation, ask the user to restart their terminal. If the agent needs the restarted shell to continue, ask the user to reopen their terminal and rerun their original prompt.
 
 ## Frontend Bundling
+## Agent Setup
 
 - If a frontend change doesn't show in the UI or you get a "Unable to locate file in Vite manifest" error, run `npm run build` or ask the user to run `npm run dev` or `composer run dev`.
+Install Laravel Boost from the application root before making application changes:
 
 ## Documentation Files
 
@@ -144,5 +168,10 @@ This project has domain-specific skills available in `**/skills/**`. You MUST ac
 - Run the narrowest set of tests that covers the change. Pass a file path or `--filter=testName` to `php artisan test --compact`.
 - Rerun a test after each change to it.
 - Run `vendor/bin/phpunit` to call the test runner directly. It accepts the same file path and `--filter=testName` arguments.
+```sh
+composer require laravel/boost --dev
+php artisan boost:install
+```
 
+Boost replaces these bootstrap instructions with guidelines tailored to the application. After installation, read `AGENTS.md` again and continue with the user's original request using the generated guidelines.
 </laravel-boost-guidelines>
