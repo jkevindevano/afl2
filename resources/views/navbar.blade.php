@@ -1,17 +1,34 @@
 <nav class="navbar">
-
-    <a href="{{ route('home') }}" class="logo">
+    
+    <a href="home" class="logo">
         findora<span>.</span>
     </a>
 
     <div class="nav-links">
-        @foreach (['home' => 'Home', 'product' => 'Product', 'testimoni' => 'Testimoni'] as $name => $label)
-            <a href="{{ route($name) }}" @class(['active' => request()->routeIs($name)])>{{ $label }}</a>
-        @endforeach
+
+        <a href="home">
+            Home
+        </a>
+
+        <a href="contact">
+            About Us
+        </a>
+
+        <a href="contact">
+            How It Works
+        </a>
+
+        <a href="contact">
+            Contact
+        </a>
+
     </div>
 
-    <a href="{{ $whatsappUrl }}" target="_blank" rel="noopener noreferrer" class="nav-whatsapp">
-        WhatsApp
+    <a href="https://www.instagram.com/jastip_byevaa/"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="nav-contact">
+        Instagram
     </a>
 
 </nav>
