@@ -44,10 +44,7 @@ class Product
             ],
         ];
     }
-
-    /**
-     * Buat link WhatsApp berisi pesan tanya produk.
-     */
+    
     public static function whatsappLink(string $productName): string
     {
         $message = 'Halo Kak Evaa, saya mau tanya tentang '.$productName;
