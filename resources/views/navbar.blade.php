@@ -5,23 +5,9 @@
     </a>
 
     <div class="nav-links">
-
-        <a href="home">
-            Home
-        </a>
-
-        <a href="contact">
-            About Us
-        </a>
-
-        <a href="contact">
-            How It Works
-        </a>
-
-        <a href="contact">
-            Contact
-        </a>
-
+        @foreach (['home' => 'Home', 'product' => 'Product', 'testimoni' => 'Testimoni'] as $name => $label)
+            <a href="{{ route($name) }}" @class(['active' => request()->routeIs($name)])>{{ $label }}</a>
+        @endforeach
     </div>
 
     <a href="{{ $whatsappUrl }}" target="_blank" rel="noopener noreferrer" class="nav-whatsapp">
