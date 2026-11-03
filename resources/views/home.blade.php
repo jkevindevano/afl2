@@ -1,8 +1,5 @@
 @extends('mainlayout')
 
-@section('title', 'Home | Findora')
-@section('description', 'Findora personal shopping dan jasa titip. Discover more, shop easier.')
-
 @section('main_content')
 
     <section class="hero">
