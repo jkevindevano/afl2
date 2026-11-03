@@ -16,11 +16,11 @@ class TestimonialSeeder extends Seeder
        $testimonials = [
             [
                 'name' => 'Budi Santoso',
-                'text' => 'Pelayanan sangat cepat dan hasil website sangat memuaskan!',
+                'testimonial' => 'Pelayanan sangat cepat dan hasil website sangat memuaskan!',
             ],
             [
                 'name' => 'Siti Rahma',
-                'text' => 'Sangat profesional, fiturnya lengkap dan mudah digunakan.',
+                'testimonial' => 'Sangat profesional, fiturnya lengkap dan mudah digunakan.',
             ],
             [
                 'name' => 'John Doe',
