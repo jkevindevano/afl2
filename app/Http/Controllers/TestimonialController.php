@@ -10,7 +10,7 @@ class TestimonialController extends Controller
     public function index(): View
     {
     
-        $testimonials = Testimonial::all(); 
+        $testimonials = Testimonial::getAll(); 
 
         return view('testimoni', [
             'testimonials' => $testimonials
