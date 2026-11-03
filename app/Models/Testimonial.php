@@ -10,7 +10,7 @@ class Testimonial extends Model
 
     protected $fillable = [
         'name',
-        'text',
+        'testimonial',
     ];
 
     public static function getAll()
